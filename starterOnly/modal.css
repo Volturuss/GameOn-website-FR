@@ -84,67 +84,6 @@
   }
 }
 
-/*Animation headerGrow*/
-/*@keyframes headerGrowMobileXS{
-  0%{
-    height: 62.5px;
-  }
-
-  100%{
-    height: 20vh;
-  }
-}
-
-@keyframes headerGrowMobileXSReversed{
-  0%{
-    height: 20vh;
-  }
-
-  100%{
-    height: 62.5px;
-  }
-}
-
-@keyframes headerGrowMobile{
-  0%{
-    height: 62.5px;
-  }
-
-  100%{
-    height: 25vh;
-  }
-}
-
-@keyframes headerGrowMobileReversed{
-  0%{
-    height: 25vh;
-  }
-
-  100%{
-    height: 62.5px;
-  }
-}
-
-@keyframes headerGrow{
-  0%{
-    height: 62.5px;
-  }
-
-  100%{
-    height: 35vh;
-  }
-}
-
-@keyframes headerGrowReversed{
-  0%{
-    height: 35vh;
-  }
-
-  100%{
-    height: 62.5px;
-  }
-}*/
-
 /* Submitted form's modal*/
 .submitMessage{
   display: none;
@@ -171,7 +110,6 @@
 }
 
 /* Landing Page */
-
 body {
   font-family: var(--font-default);
   font-size: 18px;
@@ -847,6 +785,7 @@ footer {
     margin: 0 auto;
   }
 
+  /* Hero Section */
   .hero-section{
     min-height: inherit;
     display: flex;
@@ -993,16 +932,6 @@ footer {
   }
 }
 
-/*@media screen and (max-width: 425px){
-  .topnav{
-    animation: headerGrowMobileReversed 1500ms ease-in-out both;
-  }
-
-  .topnav.responsive{
-    animation: headerGrowMobile 1500ms ease-in-out both;
-  }
-}*/
-
 @media screen and (min-width: 375px) and (max-width: 390px){
   .topnav.responsive a {
     font-size: 18px;
@@ -1023,15 +952,6 @@ footer {
   .header-logo {
     margin-top: 6.925px;
   }
-
-  /*.topnav{
-   
-    animation: headerGrowMobileXSReversed 1500ms ease-in-out forwards;
-  }
-
-  .topnav.responsive{
-    animation: headerGrowMobileXS 1500ms ease-in-out forwards;
-  }*/
 
   .topnav.responsive a, .topnav a.icon {
     font-size: 12px;
