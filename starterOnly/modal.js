@@ -78,7 +78,7 @@ function isEmail(eMail) {
 }
 
 function isQuantity(quantity) {
-  const regex = new RegExp(/[0-9]{1,2}/);
+  const regex = new RegExp(/^[0-9][0-9]?$|^99$/);
   return regex.test(quantity);
 }
 
@@ -151,8 +151,8 @@ function isLastValid(last) {
  */
 function isEmailValid(eMail) {
   const eMailValueTrim = eMail.value.trim();
-  let result = (eMailValueTrim != "");
-  if (!result || !isEmail(eMailValueTrim)) {
+  let result = (eMailValueTrim != "" && isEmail(eMailValueTrim));
+  if (!result) {
     setErrorFor(eMail, 'Veuillez renseigner un email valide')
     return false
   } else {
@@ -187,8 +187,8 @@ function isBirthdateValid(birthdate) {
  */
 function isQuantityValid(quantity) {
   const quantityValueTrim = quantity.value.trim();
-  let result = (quantityValueTrim != "");
-  if (!result || !isQuantity(quantityValueTrim)) {
+  let result = (quantityValueTrim != "" && isQuantity(quantityValueTrim));
+  if (!result) {
     setErrorFor(quantity, 'Veuillez renseigner un nombre')
     return false
   } else {
